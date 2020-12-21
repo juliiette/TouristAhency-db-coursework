@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'myapp/css/main.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">TouristAgency</div>
+
+            <nav class="nav">
+                <a class="nav__link" href="#">Profile</a>
+                <a class="nav__link" href="#">Search</a>
+                <a class="nav__link" href="#">Add</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="menu">
+    <div class="container">
+        <div class="menu__inner">
+            <a class="menu__link" href="#">Client</a>
+            <a class="menu__link" href="#">Group</a>
+            <a class="menu__link" href="#">Residence</a>
+            <a class="menu__link" href="#">Location</a>
+            <a class="menu__link" href="#">Place</a>
+            <a class="menu__link" href="#">Order</a>
+        </div>
+    </div>
+</div>
+{% block content %}{% endblock %}
+
+
+</body>
+</html>

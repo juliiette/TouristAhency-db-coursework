@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 70px;
+    background: #2560A5;
+    width: 100%;
+    padding-top: 18px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.nav {
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #fff;
+}
+
+
+
+
+.menu {
+    margin-top: 113px;
+    display: inline-block;
+
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 18px;
+    line-height: 22px;
+    color: #c;
+    text-transform: uppercase;
+
+    width: 100%;
+    margin-left: 188px;
+}
+
+.menu__inner {
+
+}
+
+.menu__link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 25px;
+
+    color: #000000;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.menu__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+
+    background-color: #000000;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.menu__link:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu__link:hover:after,
+.menu__link.active:after {
+    opacity: 1;
+}
+
+.menu__link.active {
+    color: #000000;
+}
+
+
+
